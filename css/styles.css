@@ -1,0 +1,187 @@
+:root {
+  font-size: 62.5%;
+  --explorer-green: #387E96;
+  --explorer-dark-green: #065E7C;
+}
+
+* {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--explorer-dark-green);
+  padding: 1.2rem 11rem;
+}
+header form {
+  flex: 1;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header .input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+header .input-wrapper input {
+  padding: 1.2rem 1.6rem;
+  min-width: 100%;
+  border-radius: 0.4rem;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.2);
+}
+header img {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
+
+main img {
+  width: 100%;
+}
+main h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+  flex: 1;
+  margin-bottom: 0.8rem;
+}
+main button {
+  width: 4rem;
+  height: 4rem;
+  padding: 1.2rem;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #065E7C;
+}
+main article {
+  padding: 3.1rem 2.6rem 2.2rem 3.4rem;
+}
+main article p {
+  margin-top: 3.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+aside {
+  padding-left: 2.2rem;
+  padding-right: 2.6rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+aside h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+aside article {
+  display: flex;
+  gap: 1.6rem;
+}
+aside article figcaption {
+  height: 8rem;
+  width: 21.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+aside article figcaption h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+aside article figcaption p {
+  max-height: 7.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+footer {
+  color: #FFFFFF;
+  background-color: #387E96;
+}
+footer p {
+  padding: 1.6rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+main, aside {
+  background-color: #FFFFFF;
+}
+
+button + button {
+  margin-left: 1.2rem;
+}
+
+#reverse {
+  transform: rotate(180deg) scaleX(-1);
+}
+
+@media (min-width: 300px) {
+  body {
+    max-width: 100vw;
+  }
+  aside article p {
+    font-size: 1rem;
+    line-height: 100%;
+  }
+}
+@media (min-width: 700px) {
+  body {
+    max-width: 100vw;
+  }
+  .page {
+    display: flex;
+    flex: 1;
+  }
+  .container {
+    padding: 0 11rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    max-width: 100vw;
+  }
+  .container {
+    padding: 0 11rem;
+    margin: 0 auto;
+  }
+  .page {
+    display: flex;
+    padding: 4rem 11rem;
+  }
+  .page main {
+    width: 80rem;
+    margin: 0 auto;
+  }
+  .page main .top {
+    display: flex;
+    margin-top: 3.2rem;
+  }
+  .page main article {
+    padding: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */

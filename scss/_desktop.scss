@@ -1,0 +1,52 @@
+@media(min-width: 300px){
+    body{
+        max-width: 100vw;
+    }
+    aside{
+        article{
+            p{
+                font-size: 1rem;
+                line-height: 100%;
+            }
+        }
+    }
+}
+
+@media(min-width: 700px){
+    body{
+        max-width: 100vw;
+    }
+    .page{
+        display: flex;
+        flex: 1;
+    }
+    .container{
+        padding: 0 11rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 900px){
+    body{
+        max-width: 100vw;
+    }
+    .container{
+        padding: 0 11rem;
+        margin: 0 auto;
+    }
+    .page{
+        display: flex;
+        padding: 4rem 11rem;
+        main{
+            width: 80rem;
+            margin: 0 auto;
+            .top{
+                display: flex;
+                margin-top: 3.2rem;
+            }
+            article{
+                padding: 0;
+            }
+        }
+    }
+}
